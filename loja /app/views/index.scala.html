@@ -1,0 +1,48 @@
+@()
+
+@main("Welcome to Play") {
+  <body style="margin: 0px">
+
+
+
+    <div class="card-panel red centralizarTexto textoColorWhite fontePadrao" >
+      Cadastro De Produtos
+    </div>
+
+    <div class="formulario">
+      <form action="/produto/novo" method="get">
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="preco">Preço</label>
+        <input type="number" name="preco" id="preco" title="R$">
+
+        <label for="marca">Marca</label>
+        <input type="text" name="marca" id="marca">
+
+        <label for="categoria">Categoria</label>
+        <input type="text" name="categoria" id="categoria">
+
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao"></textarea>
+        <br>
+        <button class="btn waves-effect waves-light red"  type="submit" name="action">Cadastrar
+          <i class="material-icons right"></i>
+        </button>
+      </form>
+    </div>
+
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/foto2.jpeg")">
+    <img src="images/foto1.jpeg" alt="">
+
+    <div class="rodape">
+
+    </div>
+
+    <input type="file" name="arquivos" class="btn btn-success"  accept="image/png, image/jpeg"  multiple />
+
+  </body>
+
+
+}

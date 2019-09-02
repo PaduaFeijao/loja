@@ -1,0 +1,31 @@
+body{
+    z-index: 99999;
+}
+.formulario{
+    border-top: 10px;
+
+}
+
+.centralizarTexto{
+    text-align: center;
+}
+
+form{
+    display: inline-grid;
+    margin: 1.5rem;
+
+
+}
+.header{
+    height: 50px;
+    background-color: aquamarine;
+    padding: 0px;
+}
+
+.textoColorWhite{
+    color: white;
+}
+
+.fontePadrao{
+    font-size: medium;
+}
